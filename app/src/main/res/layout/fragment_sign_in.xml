@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.SignInFragment">
+
+    <TextView
+        android:id="@+id/id_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/edt_login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/edt_login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Username"
+        android:padding="10dp"
+        android:maxLines="@integer/material_motion_duration_long_1"
+
+        app:layout_constraintTop_toBottomOf="@id/id_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@id/id_text_name2"
+        android:background="@drawable/text_bacground"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/id_text_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_login"
+        app:layout_constraintBottom_toTopOf="@id/edt_parol222"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_parol222"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@id/id_text_name2"
+        android:layout_width="match_parent"
+
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_parol"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/text_bacground"
+             />
+        
+        
+        
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:hint="LOGIN"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#FFC107"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_parol222" />
+
+
+    <TextView
+        android:id="@+id/btn_newaccaunt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"
+        android:text="Create a new account?"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
